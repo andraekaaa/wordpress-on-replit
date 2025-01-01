@@ -1,3 +1,6 @@
+# JUST RUN IT
+[WordPress on Replit 01/01/2025(TEMPLATE)](https://replit.com/@SnowChan2/WordPress-on-Replit-01012025)
+
 # Run WordPress on Repl.it
 Install WordPress and wp-cli on [Repl.it](https://repl.it/) using SQLite
 
