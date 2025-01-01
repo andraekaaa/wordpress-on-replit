@@ -1,37 +1,52 @@
-**Credits**:
-[WordPress on Replit by Ethan Pil]
-(https://github.com/ethanpil/wordpress-on-replit)
+**Credits**:  
+WordPress on Replit by Ethan Pil
+https://github.com/ethanpil/wordpress-on-replit
 
-=======
+---
+
 ### Setup Instructions
 
 1. **Use PHP Web Server Template on Replit**.
 
-2. **IMPORTANT**: Always open a new tab window after running the Replit. Keep in mind that the webview in the console is not synchronized with the webview in the new browser tab. 
+2. **IMPORTANT**: Always open a new tab window after running the Replit. Keep in mind that the webview in the console is not synchronized with the webview in the new browser tab.
 
-3. If you encounter errors, you may need to Exit from your Project and try reopening your project, or you can try stopping the Replit and then starting it again.
+3. If you encounter errors, you may need to **exit from your project** and try reopening it, or you can try stopping the Replit and starting it again.
 
-4. To run, just start the project and fill in your WordPress data in the console.  (or maybe, you can stop Replit when entering your username and fill it in the WordPress site instead (this is good becouse somehow with the console will give an error but still work if the site name was to long)).
-============
+4.1.  To run, simply start the project and fill in your WordPress data in the console.
+4.2. (Alternatively, you can stop Replit when entering your username and fill it in the WordPress site instead. This is recommended because sometimes using the console may cause errors when site name is to long. However, it still works. but I haven't paid much attention to that—so feel free to try it yourself).
+
+---
 
 ### WordPress Error Example:
 
 If you encounter errors similar to the following (just an example):
 
-===============================
+=============
 Warning: Array to string conversion in /home/runner/WordPress-on-Replit-01012025/wp-config.php on line 91
 Warning: Array to string conversion in /home/runner/WordPress-on-Replit-01012025/wp-config.php on line 92
 Warning: Cannot modify header information - headers already sent by (output started at /home/runner/WordPress-on-Replit-01012025/wp-config.php:91) in /home/runner/WordPress-on-Replit-01012025/wp-includes/pluggable.php on line 1435
 Warning: Cannot modify header information - headers already sent by (output started at /home/runner/WordPress-on-Replit-01012025/wp-config.php:91) in /home/runner/WordPress-on-Replit-01012025/wp-includes/pluggable.php on line 1438
-=================================
+=============
 
 You can fix this by editing the `wp-config.php` file with the following settings:
-================
+
+---
+
+**PLEASE PAY CLOSE ATTENTION**
+
+
 $_SERVER["HTTPS"] = "on";
 define('WP_SITEURL', 'YOUR REPLIT URL / .dev URL HERE');
-define('WP_HOME', 'YOUR REPLIT URL  / .dev URL HERE');
+define('WP_HOME', 'YOUR REPLIT URL / .dev URL HERE');
 define('FS_METHOD', 'direct');
 define('FORCE_SSL_ADMIN', false);
-=================
-- You can find your **Replit URL** or **.dev URL** when you open the new tab in the webview.
+=========
+importan : you need to edit it first before go on num 4.2.
+=========
+
+**PLEASE PAY CLOSE ATTENTION**
+
+- You can find your **Replit URL** or **.dev URL** when you open the new tab in the webview or simply by clicking `.replit.dev` in the webview console.
 - Make sure to **STOP or RESTART** the Replit server after making these changes.
+
+---
