@@ -13,6 +13,7 @@ https://github.com/ethanpil/wordpress-on-replit
 3. If you encounter errors, you may need to **exit from your project** and try reopening it, or you can try stopping the Replit and starting it again.
 
 4.1.  To run, simply start the project and fill in your WordPress data in the console.
+
 4.2. (Alternatively, you can stop Replit when entering your username and fill it in the WordPress site instead. This is recommended because sometimes using the console may cause errors when site name is to long. However, it still works. but I haven't paid much attention to that—so feel free to try it yourself).
 
 ---
@@ -40,13 +41,14 @@ define('WP_SITEURL', 'YOUR REPLIT URL / .dev URL HERE');
 define('WP_HOME', 'YOUR REPLIT URL / .dev URL HERE');
 define('FS_METHOD', 'direct');
 define('FORCE_SSL_ADMIN', false);
+
 =========
 importan : you need to edit it first before go on num 4.2.
 =========
 
 **PLEASE PAY CLOSE ATTENTION**
 
-- You can find your **Replit URL** or **.dev URL** when you open the new tab in the webview or simply by clicking `.replit.dev` in the webview console.
-- Make sure to **STOP or RESTART** the Replit server after making these changes.
+- You can find your Replit URL or .dev URL when you open the new tab in the webview or simply by clicking `.replit.dev` in the webview console(url that have green color tested on chrome browser).
+- Make sure to STOP or EXIT FROM THE REPLIT PROJECT after making these changes.
 
 ---
