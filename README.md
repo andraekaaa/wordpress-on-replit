@@ -1,4 +1,4 @@
-# JUST RUN IT
+# Deploy Now
 [WordPress on Replit 01/01/2025(TEMPLATE)](https://replit.com/@SnowChan2/WordPress-on-Replit-01012025?v=1#README)
 
 # Run WordPress on Repl.it
