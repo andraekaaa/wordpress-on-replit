@@ -4,7 +4,7 @@ if [ ! -f /root/installed ]; then
   echo "Instalasi WordPress pertama kali..."
   
   if [ ! -f wp-config.php ]; then
-    bash <(curl -s https://raw.githubusercontent.com/ethanpil/wordpress-on-replit/master/install-wordpress-on-replit.sh) -y
+    bash <(curl -s https://raw.githubusercontent.com/ethanpil/wordpress-on-replit/master/install-wordpress-on-replit.sh)
     
     touch /root/installed
   else
